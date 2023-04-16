@@ -1,0 +1,28 @@
+.contacts {
+  color: white;
+  background-color: #4c99b33c;
+  font-family: Bodoni MT;
+  font-size: medium;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.pinfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  width: auto;
+}
+.image {
+  height: 200px;
+  width: 150px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 6px rgb(60, 206, 138);
+}
+p {
+  width: 200px;
+  height: 200px;
+}

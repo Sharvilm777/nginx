@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body {
+        background-image: url("https://www.sagatraining.ca/wp-content/uploads/2018/10/background-images-for-login-form-8.jpg");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      form {
+        font-family: "Times New Roman";
+        background-color: #d6eaf8;
+        opacity: 70%;
+        padding: 50px;
+        border-radius: 50px;
+        max-width: 400px;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        border: #fff;
+      }
+
+      input[type="submit"],
+      button {
+        display: block;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Login</h1>
+      <label for="username"><b>Email</b></label>
+      <input type="email" id="username" name="username" />
+      <label for="password"><b>Password</b></label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        minlength="8"
+        maxlength="20"
+        pattern="^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[A-Za-z]).{8,}$"
+        title="Password must contain at least 8 characters, including one capital letter and one special character"
+      />
+      <a href="http://127.0.0.1:5500/loginpage/index2.html">Forgot password?</a>
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+    </form>
+  </body>
+</html>

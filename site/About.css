@@ -1,0 +1,31 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+body {
+  background-image: url("photos/background_image.jpg");
+}
+ul.background {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.abt,
+.working {
+  color: white;
+  background-color: #4c99b33c;
+  font-family: Bodoni MT;
+  font-size: larger;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.question:hover {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: rgb(59, 119, 209);
+  border-radius: 20px;
+}

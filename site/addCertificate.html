@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certisecure - Add Certificate</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="HomePage.css" />
+    <link rel="Navbar StyleSheet" href="navbar.css" />
+    <style>
+      * {
+        font-family: "Raleway", sans-serif;
+      }
+      body {
+        background-image: url("photos/background_image.jpg");
+        color: white;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        flex-direction: column;
+      }
+      #certificate-add-file {
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+      }
+      #upload_certificate {
+        margin-top: 20px;
+        padding: 5px 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      input[type="file"]::file-selector-button {
+        border: 1px solid #000000;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        transition: 1s;
+        font-family: "Raleway", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+     <ul class="background">
+      
+        <div class="logo">
+          <a alt="logo"><img src="photos/logo.png" alt="Logo" id="logo" /></a>
+        </div>
+        <div class="nav">
+          <a href="HomePage.html" class="i2">Home</a>
+          <a href="addCertificate.html" class="i2">Add Certifcate</a>
+          <a href="verifyCertificate.html" class="i2">Verify Certificate</a>
+          <a href="About.html" class="i2">About</a>
+          <a href="login.html" class="i2">Login</a>
+          <a href="signUp.html" class="i2">SignUp</a>
+        </div>
+      </div>
+      <div class="headTag"><a id="i3">CERTI-SECURE(Ensure Trust In Digital Certificates)</a></div>
+      
+    </ul>
+    <div class="container">
+      <div class="heading">
+        <h3>Add certificate here</h3>
+      </div>
+      <input type="file" id="certificate-add-file" />
+      <button id="upload_certificate">Upload Certificate</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
